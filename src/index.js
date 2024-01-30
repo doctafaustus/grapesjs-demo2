@@ -46,7 +46,5 @@ export default (editor, opts = {}) => {
           card.classList.remove('show-front', 'show-back');
         });
       }
-
-      window.xxx = editor;
     });
 };
