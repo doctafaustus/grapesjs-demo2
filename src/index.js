@@ -23,10 +23,12 @@ export default (editor, opts = {}) => {
       { at: 0 }
     ));
 
+
+
     editor.on('block:drag:stop', (component, block) => {
       if (!component) return console.log('block not dropped');
       if (block?.id !== 'flip-cards') return;
-  
+
       const gjsDoc = editor.Canvas.getDocument();
       const cardSideConfigBtns = gjsDoc.querySelectorAll('.card-side-config-btn');
       const cards = gjsDoc.querySelectorAll('.card');
@@ -46,5 +48,23 @@ export default (editor, opts = {}) => {
           card.classList.remove('show-front', 'show-back');
         });
       }
+    });
+
+    editor.on('block:drag:stop', (component, block) => {
+      if (!component) return console.log('block not dropped');
+      if (block?.id !== 'flip-cards3d') return;
+
+      const gjsDoc = editor.Canvas.getDocument();
+      const cards = gjsDoc.querySelectorAll('.block-flip-cards-3d .card');
+      console.log('3d', cards);
+      cards.forEach(card => {
+        card.querySelector('.details-btn')?.addEventListener('click', () => {
+          card.classList.add('flipped');
+        });
+
+        card.querySelector('.back-btn')?.addEventListener('click', () => {
+          card.classList.remove('flipped');
+        });
+      });
     });
 };
