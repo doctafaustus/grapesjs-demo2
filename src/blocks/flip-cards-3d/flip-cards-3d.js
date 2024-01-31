@@ -12,9 +12,9 @@ export default function flipCards3d() {
         <div class="wrapper">
           <div class="card">
             <div class="content">
-              <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529408686214-b48b8532f72c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=986e2dee5c1b488d877ad7ba1afaf2ec&auto=format&fit=crop&w=1350&q=80')">
+              <div class="front" style="background-image: url('https://ntvassets-a.akamaihd.net/47DA11690F9F49E888078C706AB715D9.jpg')">
                 <div class="inner">
-                  <h2>Cozy apartment</h2>
+                  <h2>Embassy Suites Golf Resort</h2>
                   <div class="rating">
                     <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706651099/star-solid_tstpkw.jpg?_s=public-apps">
                     <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706651099/star-solid_tstpkw.jpg?_s=public-apps">
@@ -57,7 +57,7 @@ export default function flipCards3d() {
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates earum nostrum ipsam ullam, reiciendis nam consectetur? Doloribus voluptate architecto possimus perferendis tenetur nemo amet temporibus, enim soluta nam, debitis.</p>
                   </div>
                   <div class="location">
-                    Warsaw, Poland
+                    Greenville, SC
                   </div>
                   <div class="price">
                     38€ / day
@@ -72,9 +72,9 @@ export default function flipCards3d() {
           <div class="card">
             <input class="more" id="card2" type="checkbox">
             <div class="content">
-              <div class="front" style="background-image: url('https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c02fb96f9cfc16d3649835b75d1b2033&auto=format&fit=crop&w=1350&q=80')">
+              <div class="front" style="background-image: url('https://ntvassets-a.akamaihd.net/D7E9791C8CEA48438053E7698361180F.jpg')">
                 <div class="inner">
-                  <h2>Modern flat</h2>
+                  <h2>Homewood Suites Downtown Cary</h2>
                   <div class="rating">
                     <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706651099/star-solid_tstpkw.jpg?_s=public-apps">
                     <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706651099/star-solid_tstpkw.jpg?_s=public-apps">
@@ -122,7 +122,7 @@ export default function flipCards3d() {
                     </ul>
                   </div>
                   <div class="location">
-                    Warsaw, Poland
+                    Cary, NC
                   </div>
                   <div class="price">
                     42€ / day
@@ -137,9 +137,9 @@ export default function flipCards3d() {
           <div class="card">
             <input class="more" id="card3" type="checkbox">
             <div class="content">
-              <div class="front" style="background-image: url('https://images.unsplash.com/photo-1529595354331-201ad3ae5e71?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6114533e2d0c1c81534fe13611dbfd76&auto=format&fit=crop&w=658&q=80')">
+              <div class="front" style="background-image: url('https://ntvassets-a.akamaihd.net/37950159B6504FC4AD96E1E78018D50E.jpg')">
                 <div class="inner">
-                  <h2>Luxury property</h2>
+                  <h2>Aloft Downtown Chicago</h2>
                   <div class="rating">
                     <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706651099/star-solid_tstpkw.jpg?_s=public-apps">
                     <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706651099/star-solid_tstpkw.jpg?_s=public-apps">
@@ -182,7 +182,7 @@ export default function flipCards3d() {
                     <p>Quam, iusto.Neque ratione ut deserunt unde dicta nesciunt, repudiandae aspernatur explicabo numquam! Tenetur!</p>
                   </div>
                   <div class="location">
-                    Cracow, Poland
+                    Chicago, IL
                   </div>
                   <div class="price">
                     60€ / day

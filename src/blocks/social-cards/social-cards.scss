@@ -2,7 +2,8 @@ $card-bg-colors: (#e07768, #6eadd4, #4aada9);
 
 .block-social-cards {
   .container {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     position: relative;
     display: flex;
     justify-content: space-between;

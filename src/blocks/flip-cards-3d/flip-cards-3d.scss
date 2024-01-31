@@ -33,11 +33,11 @@
   .more {
     display: none;
   }
-  // .more:checked ~ .content {
-  //   transform: rotateY(180deg);
-  // }
   .card.flipped .content {
     transform: rotateY(180deg);
+  }
+  h2 {
+    text-align: center;
   }
 
   .front, .back {
