@@ -53,7 +53,7 @@ export default function flipCards() {
             <h3>Full-On Satin Lipstick</h3>
           </div>
           <div class="card__side card__side--back">
-            <h3>Mountain Herbal Body Moisturizer</h3>
+            <h3>Full-On Satin Lipstick</h3>
             <h4>By Buxom</h4>
             <p>
               Elevate your makeup routine with the seamless fusion of controlled precision application and vibrant color payoff, all achieved effortlessly in just one swipe.

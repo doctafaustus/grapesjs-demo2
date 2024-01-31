@@ -1,5 +1,6 @@
 import loadComponents from './components';
 import loadBlocks from './blocks';
+import Glide from '@glidejs/glide';
 
 
 export default (editor, opts = {}) => {
@@ -26,7 +27,7 @@ export default (editor, opts = {}) => {
 
 
     editor.on('block:drag:stop', (component, block) => {
-      if (!component) return console.log('block not dropped');
+      if (!component) return;
       if (block?.id !== 'flip-cards') return;
 
       const gjsDoc = editor.Canvas.getDocument();
@@ -51,12 +52,11 @@ export default (editor, opts = {}) => {
     });
 
     editor.on('block:drag:stop', (component, block) => {
-      if (!component) return console.log('block not dropped');
+      if (!component) return;
       if (block?.id !== 'flip-cards3d') return;
 
       const gjsDoc = editor.Canvas.getDocument();
       const cards = gjsDoc.querySelectorAll('.block-flip-cards-3d .card');
-      console.log('3d', cards);
       cards.forEach(card => {
         card.querySelector('.details-btn')?.addEventListener('click', () => {
           card.classList.add('flipped');
@@ -66,5 +66,33 @@ export default (editor, opts = {}) => {
           card.classList.remove('flipped');
         });
       });
+    });
+
+    editor.on('block:drag:stop', (component, block) => {
+      if (!component) return;
+      if (block?.id !== 'carousel') return;
+
+      window.xxx = Glide;
+      const gjsDoc = editor.Canvas.getDocument();
+      const glideEls = gjsDoc.querySelectorAll('.glide');
+
+      if (!glideEls.length) return console.error('No glide root element found');
+
+      const config = {
+        type: 'carousel',
+        perView: 3,
+        gap: 20
+      };
+
+      glideEls.forEach(glideEl => {
+        new Glide(glideEl, config).mount();
+      });
+  
+      // const slides = document.querySelectorAll('.glide__slide');
+      // slides.forEach(slide => {
+      //   slide.addEventListener('click', () => {
+      //     console.log('test');
+      //   });
+      // });
     });
 };
