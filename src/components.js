@@ -28,30 +28,29 @@ export default (editor, opts = {}) => {
 
   const carouselScript = function() {
     const script = document.createElement('script');
-    script.src = 'https://github.com/glidejs/glide/releases/download/v3.6.1/glide.min.js';
+    script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
     script.onload = () => {
-
-      console.log('Glide', Glide);
-      console.log('document', document.querySelector('.glide'))
-
-      const config = {
-        type: 'carousel',
-        perView: 3,
-        gap: 20
-      };  
-
-      new Glide(document.querySelector('.glide'), config).mount();
-      // const config = {
-      //   type: 'carousel',
-      //   perView: 3,
-      //   gap: 20
-      // };  
-
-      // const glideEl = this.querySelector('.glide');
-      // console.log('glideEl', glideEl)
-
-      // new Glide(glideEl, config).mount();
-
+      const swiper = new Swiper('.swiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerGroup: 3,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          }
+        }
+      });
     };
     document.body.appendChild(script);
   };
@@ -63,12 +62,6 @@ export default (editor, opts = {}) => {
         styles: carousel.styles,
         components: carousel.content
       },
-    },
-    view: {
-      onRender() {
-        console.log('redner', this)
-
-      }
     }
   });
 
