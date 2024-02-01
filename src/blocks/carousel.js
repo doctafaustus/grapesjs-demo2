@@ -110,8 +110,35 @@ const carousel = {
       </div>
     </div>
   </div>
-
-  `
+  `,
+  script: function() {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js';
+    script.onload = () => {
+      const swiper = new Swiper('.swiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        slidesPerGroup: 3,
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          }
+        }
+      });
+    };
+    document.body.appendChild(script);
+  } 
 }
 
 export default carousel;
