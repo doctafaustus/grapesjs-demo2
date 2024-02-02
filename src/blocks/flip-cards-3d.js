@@ -20,7 +20,7 @@ const flipCards3d = {
       width: 100%;
     }
     .block-flip-cards-3d .card {
-      width: 420px;
+      width: 400px;
       height: 340px;
       margin: 1em;
       perspective: 1500px;
@@ -234,7 +234,6 @@ const flipCards3d = {
     }
     .block-flip-cards-3d .cta-arrow {
       width: 16px;
-      margin-top: 10px;
     }
     .block-flip-cards-3d .rating img {
       width: 16px;
@@ -304,7 +303,6 @@ const flipCards3d = {
         </div>
       </div>
       <div class="card">
-        <input class="more" id="card2" type="checkbox">
         <div class="content">
           <div class="front" style="background-image: url('https://ntvassets-a.akamaihd.net/D7E9791C8CEA48438053E7698361180F.jpg')">
             <div class="inner">
@@ -369,7 +367,6 @@ const flipCards3d = {
         </div>
       </div>
       <div class="card">
-        <input class="more" id="card3" type="checkbox">
         <div class="content">
           <div class="front" style="background-image: url('https://ntvassets-a.akamaihd.net/37950159B6504FC4AD96E1E78018D50E.jpg')">
             <div class="inner">

@@ -5,7 +5,7 @@ const carousel = {
   }
   .block-carousel .container {
     background-color: #000;
-    padding: 30px 50px 80px 50px;
+    padding: 30px 50px 60px 50px;
     text-align: center;
     width: 660px;
     border-radius: 25px 25px 0 0;
@@ -52,6 +52,7 @@ const carousel = {
     border: none;
     padding: 14px 6px;
     border-radius: 4px;
+    cursor: pointer;
   }
   .block-carousel .glide__arrow svg {
     fill: #fff;
@@ -130,10 +131,6 @@ const carousel = {
             slidesPerView: 4,
             spaceBetween: 40
           },
-          1280: {
-            slidesPerView: 5,
-            spaceBetween: 50
-          }
         }
       });
     };

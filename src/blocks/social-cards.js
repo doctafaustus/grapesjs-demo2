@@ -79,6 +79,8 @@ const socialCards = {
     .block-social-cards .container .card .face.face2 .content p {
       text-align: center;
       color: #414141;
+      font-size: 16px !important;
+      line-height: 20px !important;
     }
     .block-social-cards .container .card .face.face2 .content h3 {
       margin-bottom: 10px;
@@ -138,14 +140,14 @@ const socialCards = {
         <div class="face face1">
           <div class="content">
             <div class="icon">
-              <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706643419/Msc/github-square-brands_risdsz.jpg?_s=public-apps">
+              <img src="https://res.cloudinary.com/dzynqn10l/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1706899903/facebook_1_100x100_ezd2aw.jpg?_s=public-apps">
             </div>
           </div>
         </div>
         <div class="face face2">
           <div class="content">
-            <h3><a href="https://github.com/atom888" target="_blank">@nativoDev</a></h3>
-            <p>This is where I share code and work on projects.</p>
+            <h3><a href="https://facebook.com" target="_blank">@nativoDev</a></h3>
+            <p>This is where I connect with friends and family.</p>
           </div>
         </div>
       </div>
