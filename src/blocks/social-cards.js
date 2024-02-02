@@ -102,7 +102,7 @@ const socialCards = {
     }
   `,
   content: `
-    <div class="block-social-cards" style="margin:100px; padding:25px;" data-gjs-editable="true">
+    <div class="block-social-cards" data-gjs-editable="true">
       <div class="container">
       <div class="card">
         <div class="face face1">

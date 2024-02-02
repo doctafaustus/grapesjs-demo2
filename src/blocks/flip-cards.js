@@ -20,9 +20,12 @@ const flipCards = {
     .block-flip-cards .card__side--front img {
       width: 100%;
     }
-    .block-flip-cards .card__side--front h3 {
-      font-size: 16px;
+    .block-flip-cards .card__side--front h3,
+    .block-flip-cards .card__side--back h3 {
+      font-size: 18px !important;
+      line-height: 22px !important;
       font-weight: 700;
+      margin-top: 10px;
     }
     .block-flip-cards .card h4 {
       margin: 0;
@@ -54,6 +57,14 @@ const flipCards = {
       justify-content: center;
       background: #fff;
       transform: rotateY(180deg);
+    }
+    .block-flip-cards .card__side--back h4 {
+      font-size: 16px !important;
+      margin-bottom: 16px !important;
+    }
+    .block-flip-cards .card__side--back p {
+      font-size: 15px !important;
+      line-height: 20px !important;
     }
     .block-flip-cards .card:hover .card__side--front {
       transform: rotateY(-180deg);
@@ -126,7 +137,7 @@ const flipCards = {
     }
   `,
   content: `
-  <div class="block-flip-cards" style="margin:100px; padding:25px;">
+  <div class="block-flip-cards">
     <div class="card-side-config" style="display: none;" data-gjs-editable="false">
       <button class="card-side-config-btn" data-config="show-front">
         Edit card front

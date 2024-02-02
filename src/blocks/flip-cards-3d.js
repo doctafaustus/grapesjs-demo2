@@ -17,6 +17,7 @@ const flipCards3d = {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      width: 100%;
     }
     .block-flip-cards-3d .card {
       width: 420px;
@@ -30,9 +31,6 @@ const flipCards3d = {
       height: 100%;
       transform-style: preserve-3d;
       transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
-    }
-    .block-flip-cards-3d .more {
-      display: none;
     }
     .block-flip-cards-3d .card.flipped .content {
       transform: rotateY(180deg);
@@ -82,9 +80,11 @@ const flipCards3d = {
       margin-bottom: 0.3em;
       text-transform: uppercase;
       letter-spacing: 3px;
-      color: #fff;
+      color: #fff !important;
       font-weight: 500;
       text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+      line-height: 30px !important;
+      margin-bottom: 8px !important;
     }
     .block-flip-cards-3d .front .rating {
       grid-row: 3;
@@ -151,6 +151,15 @@ const flipCards3d = {
       overflow: auto;
       color: #355cc9;
       padding-right: 10px;
+    }
+    .block-flip-cards-3d .back .description p,
+    .block-flip-cards-3d .back .description ul li {
+      color: #355cc9 !important;
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
+    .block-flip-cards-3d .back .description ul li {
+      margin: 0;
     }
     .block-flip-cards-3d .back .location, .block-flip-cards-3d .back .price {
       font-weight: 600;
@@ -233,7 +242,7 @@ const flipCards3d = {
     }
   `,
   content: `
-  <div class="block-flip-cards-3d" style="margin:100px; padding:25px;">
+  <div class="block-flip-cards-3d">
     <div class="wrapper">
       <div class="card">
         <div class="content">
