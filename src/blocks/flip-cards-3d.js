@@ -9,6 +9,7 @@ const flipCards3d = {
       justify-content: center;
       height: 100vh;
       font-family: "Montserrat", sans-serif;
+      font-size: 16px;
     }
     .block-flip-cards-3d * {
       box-sizing: border-box;
@@ -20,10 +21,10 @@ const flipCards3d = {
       width: 100%;
     }
     .block-flip-cards-3d .card {
-      width: 400px;
-      height: 340px;
-      margin: 1em;
-      perspective: 1500px;
+      width: 25rem;
+      height: 21.25rem;
+      margin: 1rem;
+      perspective: 93.75rem;
     }
     .block-flip-cards-3d .card .content {
       position: relative;
@@ -238,6 +239,12 @@ const flipCards3d = {
     .block-flip-cards-3d .rating img {
       width: 16px;
       opacity: 0.8;
+    }
+    @media (max-width: 36rem) {
+      .block-flip-cards-3d .back .info { display: none; }
+      .block-flip-cards-3d .back .inner {
+        grid-template-rows: 0fr 0fr 0fr 0fr 1fr 0fr 0fr;
+      }
     }
   `,
   content: `
